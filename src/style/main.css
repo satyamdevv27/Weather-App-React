@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+color: white;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-input{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.weather-input input {
+    padding: 10px 30px 10px 10px;
+    border-radius: 10px;
+    color: black;
+}
+.weather-input button{
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}
+.weather-container{
+    height: 80vh;
+    width: 30vw;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    
+}
+.weather-info h1{
+  font-weight: 900;
+  font-size: xx-large;
+}
+.weather-info p {
+ 
+  font-weight: 500;
+  font-size: large;
+
+}
+.weather-moreinfo{
+    display:  flex;
+    gap: 100px;
+    margin-top: 40px;
+}
+.weather-moreinfo p {
+   font-size: large;   
+}
+.img{
+display: flex;
+gap: 20px;
+}
+
+.sunny {
+  background: linear-gradient(to bottom, #ffdb3a, #ff7b00);
+  color: #ff8c00;
+}
+
+.rain{
+  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  color: #ffffff;
+}
+
+.clouds {
+  background: linear-gradient(to bottom, #8baaaa, #ae8fa0);
+  color: #333333;
+}
+
+.stormy {
+  background: linear-gradient(to bottom, #1c1c1c, #434343);
+  color: #ffffff;
+}
+
+.snowy {
+  background: linear-gradient(to bottom, #f7f8fa, #d9dfe8);
+  color: #2e4a62;
+}
+
+.clear {
+  background: linear-gradient(to bottom, #87ceeb, #fefefe);
+  color: #2c3e50;
+}
+
+.haze {
+  background: linear-gradient(to bottom, #b8c6db, #f5f7fa);
+  color: #555555;
+}
+
+.five_day {
+  margin-top: 30px;
+  width: 100%; 
+  overflow: hidden; 
+}
+
+.forcast {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+}
+
+.slick-slider {
+  width: 100%; 
+  max-width: 300px; 
+  margin: 0 auto; 
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-slide {
+  display: flex !important; 
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:1000px) {
+    .weather-container{
+        height: 100vh;
+        width: 100vw;
+    }
+    .weather-input{
+      padding: 0 10px;
+    }
+}
